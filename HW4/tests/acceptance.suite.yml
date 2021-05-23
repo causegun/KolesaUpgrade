@@ -8,10 +8,10 @@ actor: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: https://habr.com/ru
+            url: http://automationpractice.com/index.php
             host: localhost
             port: 9515
             browser: chrome
-            window_size: 1440x900
+            window_size: 1368x768
         - \Helper\Acceptance
 step_decorators: ~        
