@@ -1,6 +1,6 @@
 <?php
 
-class ItemsCountCest
+class SearchtCest
 {
     /**
      * Проверить вывод списка товаров по запросу
