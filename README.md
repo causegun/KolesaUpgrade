@@ -1,2 +1,2 @@
 # KolesaUpgrade
-here will be hws of Kolesa Upgrade course
+My homeworks in KolesaUpgrade
