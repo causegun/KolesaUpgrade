@@ -21,6 +21,6 @@ class SearchtCest
         $I->fillField('#search_query_top', 'Printed dress');
         $I->seeElement('#searchbox > button');
         $I->click('#searchbox > button');
-        $I->seeNumberOfElements('//ul[@class = "product_list grid row"]/li', 5);
+        $I->seeNumberOfElements('.ajax_block_product', 5);
     }
 }
