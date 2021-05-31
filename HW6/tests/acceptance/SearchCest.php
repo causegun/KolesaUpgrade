@@ -1,5 +1,6 @@
 <?php
 
+use Page\Acceptance\MainPage;
 use Page\Acceptance\SearchPage;
 
 /**
@@ -12,12 +13,14 @@ class SearchCest
      */
     public function checkSearchView(AcceptanceTester $I)
     {
+        $mainPage = new MainPage($I);
         $searchPage = new SearchPage($I);
 
-        $I->amOnPage(SearchPage::$URL);
+        $I->amOnPage(MainPage::$URL);
 
-        $searchPage->searchSummerDresses()
-            ->checkDefaultGrid()
+        $mainPage->searchSummerDresses();
+        
+        $searchPage->checkDefaultGrid()
             ->checkGridView()
             ->clickListView()
             ->checkListView();
