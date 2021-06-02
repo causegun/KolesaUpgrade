@@ -9,10 +9,13 @@ class QuickViewCest
     {
         $blouseLabelCss = '.ajax_block_product:nth-child(2) .product-name';
         $blouseLabelXPath = '//ul[@id="homefeatured"]/li[position()=2]//a[@class="product-name"]';
+        
         $quickViewLinkCss = '#homefeatured .ajax_block_product:nth-child(2) a.quick-view';
         $quickViewLinkXPath = '//ul[@id="homefeatured"]/li[position()=2]//a[@class="quick-view"]';
+        
         $iframeCss = '.fancybox-iframe';
         $iframeXPath = '//iframe[@class = "fancybox-iframe"]';
+        
         $productLabelInIframeCss = '#product [itemprop="name"]';
         $productLabelInIframeXPath = '//body[@id="product"]//h1[@itemprop="name"]';
 
