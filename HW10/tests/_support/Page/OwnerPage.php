@@ -4,7 +4,7 @@ namespace Page;
 class OwnerPage 
 {
     /**
-     * Локатор кнопки Snap //li[1]/b
+     * Локатор кнопки Snap
      */
     public static $snapButton = '//*[@id="snap"]';
 
