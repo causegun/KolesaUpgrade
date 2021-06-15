@@ -1,0 +1,20 @@
+name: Workflow
+on: [push]
+
+jobs: 
+  buildAndTest:
+    runs-om: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+     # - uses: nanasess/setup-php@master
+      - name: Install Dependencies
+        run: composer install
+      - name: Run chromedriver
+        run: nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub dev/null 2>&1 &
+      - name: Run tests
+        run: php/vendor/codecept run --steps -vvv --xml
+      - name: Publist Test Report
+        if: always()
+        uses: mikepenz/action-junit-report@v2.4.2
+        with:
+          report_paths: 'tests/_output/report.xml'
