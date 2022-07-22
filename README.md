@@ -1,2 +1,2 @@
 # KolesaUpgrade
-My KolesaUpgrade Web QA Automation homeworks
+My KolesaUpgrade Web QA Automation course homeworks
